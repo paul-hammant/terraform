@@ -32,8 +32,8 @@ we can also explicitly define a variable
 terraform apply  -var-file="secret.tfvars"
 ```
 ## Command Line
-###### Command Line
 we can also explicitly define variable
+###### Command
 ```
 terraform apply  -var 'keypair=oregon'
 ```
