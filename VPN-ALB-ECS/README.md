@@ -8,12 +8,17 @@
 
 # Terraform General Steps
 ###### Step1: Initialize the terraform directory 
-$terraform init
+```
+terraform init
+```
 ###### Step2: Check the action Plan or dry run
-$terraform plan 
+```
+terraform plan 
+```
 ###### Step3: Apply the changes
-$terraform apply
-
+```
+terraform apply
+```
 # Overide Variable
 we can also explicitly define a variable
 ## From a file:
@@ -23,14 +28,19 @@ we can also explicitly define a variable
  region = "us-west-2"
 ```
 ###### command
-$terraform apply  -var-file="secret.tfvars"
-
+```
+terraform apply  -var-file="secret.tfvars"
+```
 ## Command Line
 ###### Command Line
 we can also explicitly define variable
-$terraform apply  -var 'keypair=oregon'
+```
+terraform apply  -var 'keypair=oregon'
+```
 
 
 # Excution Steps 
 ###### create variable.tfvars with all the variable defined in variable.tf file defined in this directory
-$terraform plan -var-file="variable.tfvars"
+```
+terraform plan -var-file="variable.tfvars"
+```
